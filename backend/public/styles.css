@@ -1,1 +1,42 @@
+/* Custom styles for admin dashboard */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.severity-critical {
+    border-left: 4px solid #ef4444;
+}
+
+.severity-high {
+    border-left: 4px solid #f97316;
+}
+
+.severity-medium {
+    border-left: 4px solid #eab308;
+}
+
+.severity-low {
+    border-left: 4px solid #22c55e;
+}
+
+.pulse-dot {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
